@@ -48,7 +48,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
   database: forum-dua_production
-  username: forum-dua
-  password: <%= ENV['FORUM-DUA_DATABASE_PASSWORD'] %>
